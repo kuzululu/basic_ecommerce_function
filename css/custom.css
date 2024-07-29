@@ -1,0 +1,156 @@
+body{
+	font-family: Bodoni MT;
+	max-width: 100% !important;
+	overflow-x: hidden !important; 
+	scroll-behavior: smooth;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+p{
+	text-align: justify;
+}
+
+.welcome-msg{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+textarea{
+	resize: none;
+}
+
+/*fixed over dropdown in margin*/
+.dropdown-menu-end{
+	right: 0;
+	left: auto;
+}
+
+#carousel-banner{
+	background: rgba(223, 218, 221, 0.8);
+}
+
+#featured{
+	background: rgba(165, 216, 237, 0.8);
+}
+
+#contact{
+	background: rgba(165, 220, 253, 0.8);
+}
+
+#navbar a{
+	color: black;
+}
+
+#bodyBackground{
+	background: url("../images/image.jpg") fixed;
+	background-size: 100% calc(100vh - 0px);
+}
+
+.toggleIcon:hover{
+	cursor: pointer;
+}
+
+#map{
+	height: 50vh;
+	width: 100%;
+}
+
+#register-form, #login-form{
+/* From https://css.glass */
+background: rgba(147, 168, 248, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.1px);
+border: 1px solid rgba(14, 13, 13, 0.3);
+}
+
+
+#btnScrollToTop{
+	position: fixed; /*to fixed when scrolling*/
+	right: 10px; /*place in right corner*/
+	bottom: 10px; /*place in bottom of the page*/
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+}
+
+#swal-success{
+	border: 1px solid green;
+	padding: 5px;
+	text-decoration: none;
+	background: white;
+	color: black;
+	font-weight: bolder;
+	transition: background .5s ease-in-out;
+}
+
+
+#swal-cancel{
+	border: 1px solid red;
+	padding: 5px;
+	text-decoration: none;
+	background: white;
+	color: black;
+	font-weight: bolder;
+	transition: background .5s ease-in-out;
+}
+
+#swal-cancel:hover{
+	border: none;
+	background: red;
+	color: white;
+	font-weight: bolder;
+}
+
+#swal-success:hover{
+	border: none;
+	background: green;
+	color: white;
+	font-weight: bolder;
+}
+
+.ui-datepicker{
+	z-index: 9999 !important;
+}
+
+#categories img, #products img{
+	height: 10em;
+	width: 100%;
+	border-radius: 20%;
+}
+
+@media print{
+	@page{
+		margin: 0;
+	}
+
+	@page{
+		size: A4 landscape;
+		margin-right: .5rem;
+		margin-left: .5rem;
+		margin-top: 25mm;
+		margin-bottom: 10mm;
+    	border: initial;
+   	 	border-radius: initial;
+   	 	width: initial;
+	    min-height: initial;
+	    box-shadow: initial;
+	    background: initial;
+	    page-break-after: always;
+	}
+
+	/*table th:last-child{
+		display: none;
+	}
+
+	table-td:last-child{
+		display: none;
+	}
+*/
+	table{
+		border-collapse: collapse;
+	}
+}

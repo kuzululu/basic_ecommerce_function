@@ -1,0 +1,121 @@
+body{
+	font-family: Bodoni MT;
+	max-width: 100% !important;
+	overflow-x: hidden !important; 
+	scroll-behavior: smooth;
+}
+
+p{
+	text-align: justify;
+}
+
+textarea{
+	resize: none;
+}
+
+/*fixed over dropdown in margin*/
+.dropdown-menu-end{
+	right: 0;
+	left: auto;
+}
+
+#adminBody{
+	background: url("../../images/bg-admin.jpg") fixed;
+	background-size: 100% calc(100vh - 0px);
+}
+
+.information{
+	text-shadow: rgb(2, 10, 14) 3px 0px 0px, rgb(2, 10, 14) 2.83487px 0.981584px 0px, rgb(2, 10, 14) 2.35766px 1.85511px 0px, rgb(2, 10, 14) 1.62091px 2.52441px 0px, rgb(2, 10, 14) 0.705713px 2.91581px 0px, rgb(2, 10, 14) -0.287171px 2.98622px 0px, rgb(2, 10, 14) -1.24844px 2.72789px 0px, rgb(2, 10, 14) -2.07227px 2.16926px 0px, rgb(2, 10, 14) -2.66798px 1.37182px 0px, rgb(2, 10, 14) -2.96998px 0.42336px 0px, rgb(2, 10, 14) -2.94502px -0.571704px 0px, rgb(2, 10, 14) -2.59586px -1.50383px 0px, rgb(2, 10, 14) -1.96093px -2.27041px 0px, rgb(2, 10, 14) -1.11013px -2.78704px 0px, rgb(2, 10, 14) -0.137119px -2.99686px 0px, rgb(2, 10, 14) 0.850987px -2.87677px 0px, rgb(2, 10, 14) 1.74541px -2.43999px 0px, rgb(2, 10, 14) 2.44769px -1.73459px 0px, rgb(2, 10, 14) 2.88051px -0.838247px 0px;
+}
+
+#navbar a{
+	color: black;
+}
+
+.toggleIcon:hover{
+	cursor: pointer;
+}
+
+
+#btnScrollToTop{
+	position: fixed; /*to fixed when scrolling*/
+	right: 10px; /*place in right corner*/
+	bottom: 10px; /*place in bottom of the page*/
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+}
+
+#swal-success{
+	border: 1px solid green;
+	padding: 5px;
+	text-decoration: none;
+	background: white;
+	color: black;
+	font-weight: bolder;
+	transition: background .5s ease-in-out;
+}
+
+
+#swal-cancel{
+	border: 1px solid red;
+	padding: 5px;
+	text-decoration: none;
+	background: white;
+	color: black;
+	font-weight: bolder;
+	transition: background .5s ease-in-out;
+}
+
+#swal-cancel:hover{
+	border: none;
+	background: red;
+	color: white;
+	font-weight: bolder;
+}
+
+#swal-success:hover{
+	border: none;
+	background: green;
+	color: white;
+	font-weight: bolder;
+}
+
+.ui-datepicker{
+	z-index: 9999 !important;
+}
+
+@media print{
+	@page{
+		margin: 0;
+	}
+
+	@page{
+		size: A4 landscape;
+		margin-right: .5rem;
+		margin-left: .5rem;
+		margin-top: 25mm;
+		margin-bottom: 10mm;
+    	border: initial;
+   	 	border-radius: initial;
+   	 	width: initial;
+	    min-height: initial;
+	    box-shadow: initial;
+	    background: initial;
+	    page-break-after: always;
+	}
+
+	/*table th:last-child{
+		display: none;
+	}
+
+	table-td:last-child{
+		display: none;
+	}
+*/
+	table{
+		border-collapse: collapse;
+	}
+}
